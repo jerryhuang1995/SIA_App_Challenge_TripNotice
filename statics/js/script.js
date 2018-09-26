@@ -8,7 +8,7 @@ $(document).ready(function(){
             data: pd,
             cache: false,
             success: function(){
-                window.location.href = "/user?dest="+dest;
+                window.location.href = "/sites?dest="+dest;
             },
             error: function(){
                 alert("error!");
