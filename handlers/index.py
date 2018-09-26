@@ -2,7 +2,6 @@
 # coding=utf-8
 
 import tornado.web
-import methods.readcsv as mrc
 import json
 
 class IndexHandler(tornado.web.RequestHandler):

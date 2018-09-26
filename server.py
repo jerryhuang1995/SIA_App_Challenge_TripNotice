@@ -20,7 +20,7 @@ class siteNode(object):
 
     def recommend(self):
         sort_dict = {}
-		
+
         for i, site in enumerate(self.node_list):
             sort_dict[site.name] = {}
             sort_dict[site.name]['relate'] = i+1
@@ -37,7 +37,7 @@ def main():
     http_server = tornado.httpserver.HTTPServer(application)
     http_server.listen(options.port)
 
-    print("Development server is running at http://127.0.0."+str(options.port))
+    print(f"Development server is running at http://127.0.0.1:{options.port}")
     print("Quit the server with Control-C")
 
     tornado.ioloop.IOLoop.instance().start()
