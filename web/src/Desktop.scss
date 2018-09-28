@@ -7,9 +7,9 @@
 
   display: flex;
   flex-flow: column nowrap;
+
   width: 100vw;
   height: 100vh;
-  // overflow: hidden;
 
   h1 {
     color: $fontColor;
@@ -168,7 +168,6 @@
 
           p {
             position: absolute;
-            bottom: -20px;
             left: 50%;
             transform: translateX(-50%);
             white-space: nowrap;
@@ -229,16 +228,8 @@
             margin-top: 25px;
 
             img {
-              width: 60px;
               height: 60px;
-            }
-
-            .stars {
-              margin-left: 30px;
-
-              svg {
-                fill: $primaryColor;
-              }
+              margin-right: 30px;
             }
           }
         }
@@ -249,6 +240,7 @@
   .footer {
     border-top: 2px solid #bbbdce;
     flex: 1;
+    padding: 20px 35px;
 
     > ul {
       display: flex;
@@ -256,14 +248,14 @@
       justify-content: space-evenly;
       align-items: center;
       padding: 0;
-      margin: 20px 0 0 0;
+      margin: 0;
       width: 100%;
 
       > li {
         $borderRadius: 10px;
 
         max-width: $itemWidth;
-        height: 200px;
+        height: 190px;
         border-bottom-left-radius: $borderRadius;
         border-bottom-right-radius: $borderRadius;
         box-shadow: 2px 4px 6px -2px #00000023;
@@ -280,7 +272,7 @@
 
         > img {
           width: 100%;
-          height: calc(100% - 40px);
+          height: 150px;
           object-fit: cover;
           object-position: center;
           border-bottom: 6px inset $lighterPrimaryColor;

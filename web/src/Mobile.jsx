@@ -1,4 +1,8 @@
 import React from "react";
+
+import shoppingIcon from "./assets/icons/shopping.png";
+import landmarkIcon from "./assets/icons/landmark.png";
+import natureIcon from "./assets/icons/nature.png";
 import "./Mobile.scss";
 
 const Mobile = () => (
@@ -43,6 +47,7 @@ const Mobile = () => (
             </svg>
           </div>
           <div className="circle bg-white rounded-circle" />
+          <p className="flight-number">Airbus A350-900</p>
         </div>
         <div className="col-3 d-flex flex-column justify-content-center align-items-center">
           <p>Terminal 1</p>
@@ -56,29 +61,95 @@ const Mobile = () => (
       <div className="row">
         <div className="col d-flex flex-column align-items-center">
           <p>Shopping</p>
-          <i className="fas fa-gift fa-3x" />
+          <img src={shoppingIcon} alt="shopping" />
           <div className="stars">
-            <i className="fas fa-star" />
-            <i className="far fa-star" />
-            <i className="far fa-star" />
+            <span>
+              <svg>
+                <use href="#star-icon" x="0" y="0" width="24" height="24" />
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use
+                  href="#border-star-icon"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="24"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use
+                  href="#border-star-icon"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="24"
+                />
+              </svg>
+            </span>
           </div>
         </div>
         <div className="col d-flex flex-column align-items-center">
           <p>Landmark</p>
-          <i className="fas fa-torii-gate fa-3x" />
+          <img src={landmarkIcon} alt="landmark" />
           <div className="stars">
-            <i className="fas fa-star" />
-            <i className="fas fa-star" />
-            <i className="far fa-star" />
+            <span>
+              <svg>
+                <use href="#star-icon" x="0" y="0" width="24" height="24" />
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use href="#star-icon" x="0" y="0" width="24" height="24" />
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use
+                  href="#border-star-icon"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="24"
+                />
+              </svg>
+            </span>
           </div>
         </div>
         <div className="col d-flex flex-column align-items-center">
           <p>Nature</p>
-          <i className="fas fa-tree fa-3x" />
+          <img src={natureIcon} alt="nature" />
           <div className="stars">
-            <i className="fas fa-star" />
-            <i className="far fa-star" />
-            <i className="far fa-star" />
+            <span>
+              <svg>
+                <use href="#star-icon" x="0" y="0" width="24" height="24" />
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use
+                  href="#border-star-icon"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="24"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use
+                  href="#border-star-icon"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="24"
+                />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
@@ -93,27 +164,27 @@ const Mobile = () => (
 
       <div className="d-flex my-3">
         <div className="place-container p-2 d-flex flex-column align-items-center">
-          <i className="fas fa-torii-gate fa-2x" />
+          <img src={landmarkIcon} alt="landmark" />
           <h1 className="m-0">1</h1>
+          <div className="place p-1 text-center">
+            <p>天安門廣場</p>
+            <p>Tiananmen Square</p>
+          </div>
+        </div>
+        <div className="place-container p-2 d-flex flex-column align-items-center">
+          <img src={landmarkIcon} alt="landmark" />
+          <h1 className="m-0">2</h1>
           <div className="place p-1 text-center">
             <p>故宮</p>
             <p>Forbidden City</p>
           </div>
         </div>
         <div className="place-container p-2 d-flex flex-column align-items-center">
-          <i className="fas fa-torii-gate fa-2x" />
-          <h1 className="m-0">2</h1>
-          <div className="place p-1 text-center">
-            <p>圓明園</p>
-            <p>Old Summer Palace</p>
-          </div>
-        </div>
-        <div className="place-container p-2 d-flex flex-column align-items-center">
-          <i className="fas fa-gift fa-2x" />
+          <img src={shoppingIcon} alt="shopping" />
           <h1 className="m-0">3</h1>
           <div className="place p-1 text-center">
-            <p>三里屯</p>
-            <p>Sanlitun</p>
+            <p>南鑼鼓巷</p>
+            <p>Nanluogu Xiang</p>
           </div>
         </div>
       </div>
