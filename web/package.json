@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-responsive": "^5.0.0",
@@ -12,6 +13,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "precommit": "lint-staged"
@@ -43,5 +46,6 @@
     "includePaths": [
       "./node_modules"
     ]
-  }
+  },
+  "homepage": "https://jerryhuang1995.github.io/SIA_App_Challenge_TripNotice"
 }
