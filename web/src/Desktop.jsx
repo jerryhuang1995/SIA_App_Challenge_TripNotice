@@ -1,7 +1,16 @@
 import React from "react";
 
+import "./Desktop.scss";
+import airplanIcon from "./assets/icons/airplan.svg";
+import shoppingIcon from "./assets/icons/shopping.png";
+import landmarkIcon from "./assets/icons/landmark.png";
+import natureIcon from "./assets/icons/nature.png";
+import topAttractionsImg from "./assets/images/top-10-attractions.jpg";
+import tourPackageImg from "./assets/images/5-days-tour-package.jpg";
+import hotelsImg from "./assets/images/hotels.jpg";
+
 const Desktop = () => (
-  <>
+  <div id="desktop">
     <header className="header">
       <div className="overlay">
         <div className="header-container">
@@ -29,7 +38,7 @@ const Desktop = () => (
             <p className="time">2:30 am</p>
           </div>
           <div className="flight-number">
-            <img src="./assets/icons/airplan.svg" alt="flight" />
+            <img src={airplanIcon} alt="flight" />
             <p>Airbus A350-900</p>
           </div>
           <div className="dest end">
@@ -48,17 +57,11 @@ const Desktop = () => (
           <li className="ratings__rate-item">
             <p>Shopping</p>
             <div className="ratings__rating">
-              <img src="./assets/icons/shopping.png" alt="shopping" />
+              <img src={shoppingIcon} alt="shopping" />
               <div className="stars">
                 <span>
                   <svg>
-                    <use
-                      href="#border-star-icon"
-                      x="0"
-                      y="0"
-                      width="24"
-                      height="24"
-                    />
+                    <use href="#star-icon" x="0" y="0" width="24" height="24" />
                   </svg>
                 </span>
                 <span>
@@ -89,28 +92,16 @@ const Desktop = () => (
           <li className="ratings__rate-item">
             <p>Landmark</p>
             <div className="ratings__rating">
-              <img src="./assets/icons/landmark.png" alt="landmark" />
+              <img src={landmarkIcon} alt="landmark" />
               <div className="stars">
                 <span>
                   <svg>
-                    <use
-                      href="#border-star-icon"
-                      x="0"
-                      y="0"
-                      width="24"
-                      height="24"
-                    />
+                    <use href="#star-icon" x="0" y="0" width="24" height="24" />
                   </svg>
                 </span>
                 <span>
                   <svg>
-                    <use
-                      href="#border-star-icon"
-                      x="0"
-                      y="0"
-                      width="24"
-                      height="24"
-                    />
+                    <use href="#star-icon" x="0" y="0" width="24" height="24" />
                   </svg>
                 </span>
                 <span>
@@ -130,17 +121,11 @@ const Desktop = () => (
           <li className="ratings__rate-item">
             <p>Nature</p>
             <div className="ratings__rating">
-              <img src="./assets/icons/nature.png" alt="nature" />
+              <img src={natureIcon} alt="nature" />
               <div className="stars">
                 <span>
                   <svg>
-                    <use
-                      href="#border-star-icon"
-                      x="0"
-                      y="0"
-                      width="24"
-                      height="24"
-                    />
+                    <use href="#star-icon" x="0" y="0" width="24" height="24" />
                   </svg>
                 </span>
                 <span>
@@ -174,21 +159,15 @@ const Desktop = () => (
     <footer className="footer">
       <ul>
         <li id="top-10-attractions">
-          <img
-            src="./assets/images/top-10-attractions.jpg"
-            alt="top attractions"
-          />
+          <img src={topAttractionsImg} alt="top attractions" />
           <p>TOP 10 ATTRACTIONS</p>
         </li>
         <li>
-          <img
-            src="./assets/images/5-days-tour-package.jpg"
-            alt="your package"
-          />
+          <img src={tourPackageImg} alt="your package" />
           <p>YOUR 5 DAYS PACKAGE</p>
         </li>
         <li>
-          <img src="./assets/images/hotels.jpg" alt="hotels" />
+          <img src={hotelsImg} alt="hotels" />
           <p>POPULAR HOTELS</p>
         </li>
       </ul>
@@ -204,7 +183,7 @@ const Desktop = () => (
         <path d="M0 0h24v24H0z" fill="none" />
       </symbol>
     </svg>
-  </>
+  </div>
 );
 
 export default Desktop;
