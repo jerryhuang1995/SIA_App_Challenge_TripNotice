@@ -22,7 +22,7 @@
   span {
     color: $fontColor;
     margin: 0;
-    font-size: rem(25px);
+    font-size: rem(23px);
     font-weight: 500;
     letter-spacing: rem(1px);
   }
@@ -140,12 +140,12 @@
           }
 
           .terminal {
-            font-size: rem(23px);
+            font-size: rem(20px);
             white-space: nowrap;
           }
 
           .time {
-            font-size: rem(20px);
+            font-size: rem(18px);
           }
         }
 
@@ -253,7 +253,9 @@
 
       > li {
         $borderRadius: 10px;
+        margin: 0 10px;
 
+        min-width: 200px;
         max-width: $itemWidth;
         height: 190px;
         border-bottom-left-radius: $borderRadius;

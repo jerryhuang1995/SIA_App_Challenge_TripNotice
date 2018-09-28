@@ -7,7 +7,7 @@ import Mobile from "./Mobile";
 class App extends Component {
   render() {
     return (
-      <MediaQuery maxWidth={1366}>
+      <MediaQuery maxWidth={1024}>
         {isMatch => {
           if (isMatch) return <Mobile />;
           return <Desktop />;
