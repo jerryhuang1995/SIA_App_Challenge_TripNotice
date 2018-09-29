@@ -87,6 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+*.pkl
 *.npy
 
 # Mac file extensions

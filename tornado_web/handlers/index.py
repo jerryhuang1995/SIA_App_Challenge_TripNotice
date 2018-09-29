@@ -10,4 +10,4 @@ class IndexHandler(tornado.web.RequestHandler):
         self.render("index.html", city=one_city)
 
     def post(self):
-        dest = self.get_argument("destination")
+        pass
