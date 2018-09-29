@@ -1,0 +1,122 @@
+@import "./styles/variables.scss";
+
+#mobile {
+  p {
+    margin: 0;
+  }
+
+  i {
+    color: $primaryColor;
+  }
+
+  img {
+    height: 32px;
+  }
+
+  .see-more {
+    color: #fff;
+    cursor: pointer;
+    background-color: $primaryColor;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .header {
+    background-image: url("./assets/images/header.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .header-content {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .site {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    letter-spacing: 10px;
+  }
+
+  .od {
+    background-color: $primaryColor;
+  }
+
+  .od p {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  small {
+    font-weight: 100;
+  }
+
+  .fgraph {
+    position: relative;
+  }
+
+  .fgraph .circle {
+    width: 14px;
+    height: 14px;
+  }
+
+  .fgraph .flight-icon {
+    width: 100%;
+  }
+
+  .fgraph svg {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: $primaryColor;
+  }
+
+  .fgraph .hr {
+    width: 100%;
+    border: 1px solid white;
+  }
+
+  .fgraph > .flight-number {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .point {
+    color: $primaryColor;
+  }
+
+  .sperate .title {
+    color: $primaryColor;
+    border: 3px solid $primaryColor;
+    border-radius: 10px;
+  }
+
+  .sperate .hl {
+    border-bottom: 3px solid $primaryColor;
+    width: 100%;
+    height: 3px;
+  }
+
+  .sperate .vl {
+    height: 22px;
+    border-left: 3px solid $primaryColor;
+  }
+
+  .attractions {
+    color: $primaryColor;
+  }
+
+  .attractions .place {
+    border: 3px solid $primaryColor;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .attractions .place-container {
+    flex: 1;
+  }
+}

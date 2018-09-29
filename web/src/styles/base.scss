@@ -1,0 +1,41 @@
+@import "_variables.scss";
+@import "~sass-rem";
+
+*,
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+div,
+p,
+span,
+ul,
+li {
+  box-sizing: border-box;
+  font-family: "PingFangTC-Regular", "Calibri";
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.stars {
+  svg {
+    fill: $primaryColor;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
