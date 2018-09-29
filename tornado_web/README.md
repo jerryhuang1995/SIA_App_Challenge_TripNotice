@@ -8,7 +8,7 @@ Repository for the competition of SIA APP Challenge 2018
 * 天安門廣場
 * 北京故宮
 * 南鑼鼓巷
-* 8頤和園
+* 頤和園
 * 圓明園
 * 天壇
 * 什剎海
