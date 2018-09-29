@@ -87,8 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
-*.npy
 *.pkl
+*.npy
 
 # Mac file extensions
 .DS_Store
