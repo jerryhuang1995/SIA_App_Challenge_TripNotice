@@ -5,16 +5,13 @@
   $accountIconColor: #fdee0a;
   $itemWidth: 420px;
 
-  display: flex;
-  flex-flow: column nowrap;
-
   width: 100vw;
   height: 100vh;
 
   h1 {
     color: $fontColor;
     text-transform: uppercase;
-    font-size: rem(60px);
+    font-size: rem(72px);
     font-weight: 600;
   }
 
@@ -22,7 +19,7 @@
   span {
     color: $fontColor;
     margin: 0;
-    font-size: rem(23px);
+    font-size: rem(30px);
     font-weight: 500;
     letter-spacing: rem(1px);
   }
@@ -57,8 +54,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 200px;
-    flex: 2;
+    height: 348px;
 
     .header-container {
       display: flex;
@@ -114,7 +110,6 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    flex: 2;
 
     > section {
       padding: 20px 35px;
@@ -140,12 +135,12 @@
           }
 
           .terminal {
-            font-size: rem(20px);
+            font-size: rem(25px);
             white-space: nowrap;
           }
 
           .time {
-            font-size: rem(18px);
+            font-size: rem(23px);
           }
         }
 
@@ -239,7 +234,6 @@
 
   .footer {
     border-top: 2px solid #bbbdce;
-    flex: 1;
     padding: 20px 35px;
 
     > ul {
@@ -253,11 +247,14 @@
 
       > li {
         $borderRadius: 10px;
+        $liHeight: 236px;
+        $textHeight: 84px;
+
         margin: 0 10px;
 
-        min-width: 200px;
+        min-width: 210px;
         max-width: $itemWidth;
-        height: 190px;
+        height: $liHeight;
         border-bottom-left-radius: $borderRadius;
         border-bottom-right-radius: $borderRadius;
         box-shadow: 2px 4px 6px -2px #00000023;
@@ -274,17 +271,19 @@
 
         > img {
           width: 100%;
-          height: 150px;
+          height: $liHeight - $textHeight;
           object-fit: cover;
           object-position: center;
           border-bottom: 6px inset $lighterPrimaryColor;
         }
 
         > p {
+          height: $textHeight;
+          line-height: $textHeight;
           color: $descFontColor;
-          height: 40px;
           white-space: nowrap;
           text-align: center;
+          font-size: rem(23px);
         }
       }
     }
