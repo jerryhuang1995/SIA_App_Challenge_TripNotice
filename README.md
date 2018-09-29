@@ -1,40 +1,20 @@
 # SIA_App_Challenge_TripNotice
-Repository for the competition of SIA APP Challenge 2018
+### Repository for the competition of SIA APP Challenge 2018
 
-1. python3 server.py
-2. open localhost:8000 in browser
-3. copy paste one of the following words in destination 
+Pleade kindly click the following url to see our app/website's view:
+> http://jerryhuang1995.github.io/SIA_App_Challenge_TripNotice
 
-* 天安门广场
-* 故宫
-* 南锣鼓巷
-* 颐和园
-* 圆明园
-* 天坛
-* 什刹海
-* 国家体育场
-* 景山公园
-* 王府井步行街
-* 恭王府
-* 八达岭长城
-* 前门大街
-* 北海公园
-* 清华大学
-* 国家游泳中心
-* 烟袋斜街
-* 北京大学
-* 798艺术区
-* 中国国家博物馆
-* 雍和宫
-* 后海公园
-* 天安门城楼
-* 三里屯
-* 毛主席纪念堂
-* 大栅栏商业街
-* 人民大会堂
-* 西单商业街
-* 世贸天阶
-* 明十三陵
-
-5. click go!
-6. site recommendation results : 10 related sites learned by machine will be displayed. 
+1. Frontend framework: React
+> Please turn to web/ for details
+ 
+2. Backend server: Python Tornado
+> Please turn to tornado_web/ for details
+ 
+3. Data: in csv format
+> Please click recommendation_data.csv for details
+ 
+* Data Information: recommendation_data.csv
+> We list top 30 tourist sites of Beijing.
+> Each row presents the information of one particular main site.
+> The first column stands for the popularity rank of this main site,
+> followed by the name and 10 related sites with their correspondering distances to the main site. 
